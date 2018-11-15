@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="decoller/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p8,p7,p6,p1,p9,p4,p3,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧⊥)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage − 1∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="decoller/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p5,p8,p7,p6,p1,p9,p4,p3,p2">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage − 1+nbAvionsAtterrissage+nbAvionsTarmac=nt − 1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage&gt;0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage − 1+nbAvionsAtterrissage+nbAvionsTarmac=nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac − 1"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊤∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧⊥)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="decoller/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p8,p7,p1,p9,p4,p3,p2,p13">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage&gt;0"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nt&lt;ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nt&lt;ntmax∨⊥"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊤∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧⊥)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nt&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0+0+0=0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="atterrir/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p10" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p8,p7,p6,p1,p9,p3,p2,p10,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊥∨(⊤∧⊤)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsDecollage=0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsAtterrissage+1∈ℕ"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="atterrir/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p10" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with nbAvionsDecollage=0" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p4">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p5,p8,p7,p6,p1,p9,p3,p2,p10,p4,p17">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage+1)+nbAvionsTarmac=nt+1"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="⊥∨(⊤∧⊤)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="0+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="nbAvionsAtterrissage+1+nbAvionsTarmac=nbAvionsAtterrissage+nbAvionsTarmac+1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsDecollage=0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+1+nbAvionsTarmac=nt+1"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="0+nbAvionsAtterrissage+1+nbAvionsTarmac=0+nbAvionsAtterrissage+nbAvionsTarmac+1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+1+nbAvionsTarmac=nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac+1"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="atterrir/grd1/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="p4,p10" org.eventb.core.prInfHyps="p13"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p8,p7,p1,p9,p3,p2,p10,p4,p14">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊥∨(⊤∧⊤)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsDecollage=0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="⊥∨nt&gt;0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nt&lt;ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="nt&gt;0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage+1∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsTarmac − 1∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with nbAvionsAtterrissage=0" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p5,p17">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="nbAvionsDecollage+1+(nbAvionsTarmac − 1)=nbAvionsDecollage+nbAvionsTarmac"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(nbAvionsDecollage+1)+nbAvionsAtterrissage+(nbAvionsTarmac − 1)=nt"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nbAvionsDecollage+1+nbAvionsAtterrissage+(nbAvionsTarmac − 1)=nt"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="nbAvionsDecollage+1+nbAvionsAtterrissage+(nbAvionsTarmac − 1)=nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="nbAvionsDecollage+0+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="nbAvionsDecollage+1+0+(nbAvionsTarmac − 1)=nbAvionsDecollage+0+nbAvionsTarmac"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/VAR" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with nbAvionsAtterrissage=0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nbAvionsTarmac − 1+3∗0&lt;nbAvionsTarmac+3∗0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="nbAvionsTarmac − 1&lt;nbAvionsTarmac"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsTarmac − 1+3∗nbAvionsAtterrissage&lt;nbAvionsTarmac+3∗nbAvionsAtterrissage"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/NAT" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="p5,p2" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with nbAvionsAtterrissage=0" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nbAvionsTarmac+3∗0∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsTarmac+3∗nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥">
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0">
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p7,p6,p5,p1,p8,p3,p2,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsAtterrissage − 1∈ℕ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧⊥)∨⊤"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p7,p6,p5,p1,p8,p3,p2,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsTarmac+1∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧⊥)∨⊤"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p4,p7,p6,p5,p1,p8,p3,p2,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage − 1)+nbAvionsTarmac+1=nt"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧⊥)∨⊤"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage − 1)+(nbAvionsTarmac+1)=nt"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage − 1)+nbAvionsTarmac+1=nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.he:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/VAR" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p4,p7,p6,p5,p1,p8,p3,p2,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(nbAvionsTarmac+1)+3∗(nbAvionsAtterrissage − 1)&lt;nbAvionsTarmac+3∗nbAvionsAtterrissage"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧⊥)∨⊤"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsTarmac+1+3∗(nbAvionsAtterrissage − 1)&lt;nbAvionsTarmac+3∗nbAvionsAtterrissage"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/NAT" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="p9" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p7,p6,p5,p1,p8,p3,p2,p9">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsTarmac+3∗nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧⊥)∨⊤"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="DLF1/THM"/>
+<org.eventb.core.prProof name="INITIALISATION/DLF1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="0&lt;ntmax"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0&gt;0∨(0+0&lt;ntmax∧0=0)∨(0&gt;0∧0=0)∨0&gt;0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="decoller/DLF1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="p3" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsDecollage&gt;0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="⊤∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧⊥)∨⊥∨⊥"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage − 1&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage − 1=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="atterrir/DLF1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p11,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage+1=0)∨nbAvionsAtterrissage+1&gt;0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsDecollage=0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="entrerPiste/DLF1/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="p4,p5" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with nbAvionsAtterrissage=0" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p5">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p6,p9,p8,p7,p1,p10,p3,p2,p4,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="nbAvionsDecollage+1&gt;0∨(nbAvionsAtterrissage+(nbAvionsTarmac − 1)&lt;ntmax∧nbAvionsDecollage+1=0)∨nbAvionsTarmac − 1&gt;0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="nbAvionsDecollage+1&gt;0∨(nbAvionsAtterrissage+(nbAvionsTarmac − 1)&lt;ntmax∧nbAvionsDecollage+1=0)∨(nbAvionsTarmac − 1&gt;0∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="nt≤ntmax"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="nt∈ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="nbAvionsDecollage+1&gt;0∨(0+(nbAvionsTarmac − 1)&lt;ntmax∧nbAvionsDecollage+1=0)∨nbAvionsTarmac − 1&gt;0"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="nbAvionsDecollage∈ℕ"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="nbAvionsTarmac∈ℕ"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="nbAvionsAtterrissage=0"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(⊤∧⊤)∨⊥"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="nbAvionsDecollage+1&gt;0∨(nbAvionsTarmac − 1&lt;ntmax∧nbAvionsDecollage+1=0)∨nbAvionsTarmac − 1&gt;0"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="nbAvionsDecollage+1&gt;0∨(nbAvionsAtterrissage+(nbAvionsTarmac − 1)&lt;ntmax∧nbAvionsDecollage+1=0)∨(nbAvionsTarmac − 1&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="ntmax=20"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="sortirPiste/DLF1/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="p2" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0">
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="(nbAvionsTarmac&gt;0∧⊥)∨⊤">
+<org.eventb.core.prIdent name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0">
+<org.eventb.core.prIdent name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>
